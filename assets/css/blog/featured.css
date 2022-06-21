@@ -1,0 +1,65 @@
+.post-feed .featured {
+    position: relative;
+    min-height: 350px;
+}
+
+.post-feed .featured::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.post-feed .featured .post-media {
+    background-color: transparent;
+}
+
+.post-feed .featured > .post-image {
+    z-index: -1;
+}
+
+.post-feed .featured .post-media .post-image {
+    display: none;
+}
+
+.post-feed .featured .u-placeholder,
+.post-feed .featured .post-wrapper,
+.post-feed .featured .post-footer {
+    position: relative;
+    background-color: transparent;
+}
+
+.post-feed .featured .post-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.post-feed .featured .post-header {
+    margin-bottom: 0;
+}
+
+.post-feed .featured .post-title {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.post-feed .featured .post-title-link,
+.post-feed .featured .post-excerpt,
+.post-feed .featured .post-link {
+    color: var(--white-color);
+}
+
+.post-feed .featured .post-excerpt {
+    display: none;
+}
+
+.post-feed .featured .post-footer {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.post-feed .featured .post-author-image {
+    border-color: transparent;
+}

@@ -1,0 +1,108 @@
+{
+    "name": "persian-ruby",
+    "description": "A Ghost theme for Persian Content",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=4.0.0"
+    },
+    "license": "MIT",
+        "author": {
+            "name": "Ehsan Ghaffar",
+            "email": "info@ehsanghaffarii.ir",
+            "url": "https://ehsanghaffarii.ir"
+        },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme",
+        "rtl",
+        "persian"
+    ],
+    "config": {
+        "posts_per_page": 9,
+        "image_sizes": {
+            "xs": {
+                "width": 150
+            },
+            "s": {
+                "width": 400
+            },
+            "m": {
+                "width": 750
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1140
+            },
+            "xxl": {
+                "width": 1920
+            }
+        },
+        "card_assets": true,
+        "custom": {
+            "title_font": {
+                "type": "select",
+                "options": ["Shabnam sans-serif", "Elegant serif"],
+                "default": "Shabnam sans-serif"
+            },
+            "body_font": {
+                "type": "select",
+                "options": ["Shabnam sans-serif", "Elegant serif"],
+                "default": "Shabnam sans-serif"
+            },
+            "show_sidebar_on_homepage": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "show_related_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_sidebar_on_post": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_share_links": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_author": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            }
+        }
+    },
+    "scripts": {
+        "dev": "gulp",
+        "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
+        "lint": "gulp lint",
+        "zip": "gulp zip"
+    },
+    "devDependencies": {
+        "autoprefixer": "10.4.7",
+        "beeper": "2.1.0",
+        "cssnano": "5.1.11",
+        "gscan": "4.31.2",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "9.0.1",
+        "gulp-stylelint": "13.0.0",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.1.0",
+        "postcss": "8.4.14",
+        "postcss-easy-import": "4.0.0",
+        "pump": "3.0.0",
+        "stylelint": "14.9.1",
+        "stylelint-config-standard": "26.0.0",
+        "stylelint-order": "5.0.0"
+    }
+}

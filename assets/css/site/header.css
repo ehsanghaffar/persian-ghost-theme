@@ -1,0 +1,55 @@
+.site-header {
+    z-index: 80;
+    padding: 0 30px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow-base);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar-left,
+.navbar-right {
+    flex: 2;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.logo-image {
+    max-height: 40px;
+}
+
+.logo-text {
+    font-family: var(--font-alt);
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 20px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}

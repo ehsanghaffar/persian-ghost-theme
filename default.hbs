@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}{{{block "body_class"}}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}">
+    <div class="site">
+        {{> header}}
+        <div class="site-content">
+            {{{body}}}
+        </div>
+        {{> footer}}
+    </div>
+
+    {{> off-canvas}}
+    {{> pswp}}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+    <script src="{{asset "built/main.min.js"}}"></script>
+
+    {{> facebook}}
+
+    {{{block "scripts"}}}
+
+    {{ghost_foot}}
+</body>
+
+</html>
