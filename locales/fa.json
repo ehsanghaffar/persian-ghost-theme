@@ -22,7 +22,6 @@
     "% Posts": "% نوشته",
     "This post was a collaboration between:": "این نوشته با همکاری:",
     "youremail@example.com": "youremail@example.com",
-    "1 min read": "1 دقیقه زمان مطالعه",
     "% min read": "% دقیقه زمان مطالعه",
     "Article": "نوشته",
     "Archive": "آرشیو",
@@ -89,5 +88,8 @@
     "Powered by": "قدرت گرفته از",
     "Load More": "بارگیری بیشتر",
     "You might also like...": "ممکن است شما را قبلا دوست داشته باشید...",
-    "Recent Posts": "پست‌های اخیر"
+    "Recent Posts": "پست‌های اخیر",
+    "Tags": "برچسب‌ها",
+    "1 min read":"1 دقیقه زمان مطالعه",
+    "min": "دقیقه"
 }

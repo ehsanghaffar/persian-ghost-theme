@@ -12,7 +12,7 @@
                                 <time class="post-meta-date" datetime="{{date format="YYYY-MM-DD"}}">
                                     {{date published_at}}
                                 </time>
-                                <span class="post-meta-length">{{reading_time}}</span>
+                                <span class="post-meta-length">{{plural reading_time empty="0" singular="1" plural="%d"}} {{t "min"}}</span>
                             </div>
                             {{> post-media with_caption=true}}
                             <div class="post-wrapper">
